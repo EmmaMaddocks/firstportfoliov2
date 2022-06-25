@@ -1,0 +1,268 @@
+/* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+/* BODY */
+body {
+  width: 90vw;
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+/* GRID */
+.grid {
+  width: 90vw;
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: 2fr 2fr 2fr 2fr 6fr 1fr;
+}
+
+.grid > div:first-child {
+  grid-column: 1 / 6;
+}
+
+/* MAIN TITLE */
+.c-site-header { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e2f0cb;
+  color: white;
+  font-size: 40pt;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+/* ABOUT ME SECTION */
+.aboutme {
+  grid-column: 4 / 7;
+  grid-row: 2 / 2;
+  color: white;
+  text-align: center;
+  background: #ffb7a2;
+  border-radius: 0;    
+  padding: 0px 20px 0px 20px;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+
+/* NAVIGATION */
+.nav { 
+  background: #ff9aa2;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0; 
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #ff9aa2;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ff9aa2;
+  width: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* grey background color on dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ff9aa2;
+}
+
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* THINGS I LOVE SECTION */
+.thingsilove {
+  grid-column: 1 / span 4;
+  grid-row: 3 / span 1;
+  background-color: #ff9aa2;
+  color: white;
+  text-align: center;
+	font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  letter-spacing: 10px;
+	font-size: 150%;
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+
+/* THINGS I LOVE SECTION ICONS */
+.icon1 {
+  grid-row: 4;
+  grid-column: 1;
+  background:  #ff9aa2;
+}
+
+.icon2 {
+  grid-row: 4;
+  grid-column: 2;
+  background:  #ff9aa2;
+}
+
+.icon3 {
+  grid-row: 4;
+  grid-column: 3;
+  background:  #ff9aa2;
+}
+
+.icon4 {
+  grid-row: 4;
+  grid-column: 4;
+  object-fit: contain;
+  background:  #ff9aa2;
+}
+
+/* TEXT UNDER ICONS */
+.label {
+  background: #ff9aa2;
+  color: white;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+
+/* IMAGES */
+.image1 > img {
+  object-fit: fill;
+  width: 100%;
+  height:105%;
+}
+
+/* TOP LEFT IMAGE */
+.image1 {
+  grid-column: 1 / span 3;
+  grid-row: 2 / span 1;
+}
+
+/* BOTTOM RIGHT IMAGE */
+.image2 {
+  object-fit: contain;
+  width: 100%;
+  grid-column: 5 / span 2;
+  grid-row: 3 / span 7;
+}
+
+/* FOOTER */
+.footer {
+  grid-column: 1 / span 6;  
+  grid-row: 8 / span 2;
+  background-color: #e2f0cb;
+  color: white;
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 40px;
+}
+
+/* SAY HELLO BUTTON */
+.contact-button {
+  grid-column: 5 / span 2;
+  grid-row: 7 / span 1;
+  margin-top: -5px;
+	pointer-events: auto;
+	cursor: pointer;
+	background: pink;
+  color: white;
+	border-radius: 0pt;
+	padding: 6rem 3rem;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  letter-spacing: 10px;
+	font-size: 150%;
+  text-transform: uppercase;
+	position: relative;
+	display: block;
+  transition-duration: 0.4s;
+}
+
+/* SAY HELLO BUTTON ON HOVER */
+.contact-button:hover {
+  background-color: #e2f0cb;
+  color: white;
+}
+
+/* VIDEO EMBED */
+.video {
+  grid-column: 1 / span 3;
+  grid-row: 6 / span 3;
+}
+
+/* REMOVE UNDERLINE/COLOUR FROM LINKS WHEN DISPLAYED */
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+/* REMOVE UNDERLINE/COLOUR FROM LINKS WHEN VISITED */
+a:visited {
+  text-decoration: none;
+ color: white;}
+
+/* REMOVE UNDERLINE/COLOUR FROM LINKS ON HOVER */
+a:hover { 
+  text-decoration: none;
+ color: white;
+}
+
+/* REMOVE UNDERLINE/COLOUR FROM LINKS ON CLICK */
+a:active { text-decoration: none;
+ color: white;
+}
+
